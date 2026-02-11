@@ -1,0 +1,585 @@
+---
+// import style from "../styles/style.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Martinovic Service | Professional Handyman & Gardening</title>
+    <!-- <meta name="generator" content={Astro.generator} /> -->
+
+    <!-- <link rel="stylesheet" href="src/pages/style/style.css"> -->
+    <!-- <link rel="stylesheet" href="/src/styles/style.css"> -->
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="container nav-container">
+          <div class="brand-logo">
+            <div class="brand-icon">
+              <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="brand-name">Martinovic Service</h2>
+          </div>
+
+          <nav class="desktop-nav">
+            <a href="#services">Services</a>
+            <a href="#about">Meet the Pro</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <button class="btn btn-primary"> Get a Quote </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-content order-mobile-2 order-desktop-1">
+              <div class="hero-badge">
+                <span class="material-symbols-outlined" style="font-size: 1rem;"
+                  >verified</span
+                >
+                <span>Independent Craftsmanship</span>
+              </div>
+
+              <h1 class="hero-title">
+                Your Home, <br /><span class="text-primary">Handled</span> with Care.
+              </h1>
+
+              <p class="hero-text">
+                Professional repairs and gardening services by Martinovic.
+                Quality craftsmanship you can trust for every corner of your
+                home and garden.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary btn-lg">
+                  Request a Quote
+                  <span
+                    class="material-symbols-outlined"
+                    style="margin-left: 0.5rem;">arrow_forward</span
+                  >
+                </a>
+                <a href="#testimonials" class="btn btn-secondary btn-lg">
+                  See Work
+                </a>
+              </div>
+
+              <div class="hero-trust">
+                <div class="avatar-group">
+                  <div
+                    class="avatar-mini"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-dlZrvmrNVw4Ywnsb40aFMSXxbNo2aEosfVCpvdG41fFsRjVSl3VuiQuzRCatDWRmjacLjOvvzC4dXTSJ7u2F5k5SWEUG9UMJT5CJfTZZv3G79GLwaBcVyH8kGSjIl-SJBrJ7uPmVRpgVOEbSCvgE0_uQ4ze39liLQUO3IlDdi_bMWnsJxB3KhE0s65qFVPomxc6LqCGQMhbOoGKbLxk6lDKFFp5Coryo2YAOZhupwOYPlAMbrQBlk6SdqVbI7e-7R03mkjKxInQ')"
+                  >
+                  </div>
+                  <div
+                    class="avatar-mini"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApKA5CmKq-LaFs2lYx16MZYP2ywLjLfhfnWFMR4hEC6RJ9ubnNzeRLEcUqa8Jwrlb0__Nby7D3F7G0FAahS-b5_fxspKFwsb2kyJlTElKm49_DmpZsdHY7pq2lFONqSBrmlqio8LrDau00gGayels-gy9Q1x5RWuRVjCfcnLvWrgrW1kllDLIQJh99b2ldBMvULrMbutHEiyA7ZilHn7nt153fYiOkGFoyvWg6tLaGe8PJmt951rqke_dLhtz7YtIJBmwXeNtoD7Q')"
+                  >
+                  </div>
+                  <div
+                    class="avatar-mini"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAaLVCDCOc6QYh8rD55YlNcSwy5gWOTuk1y7DqBZ02DWu_5R3XR7jFkp0JwW6u8E4-SjK0U7q3ggKsocJAw_nIQRs1ezaCZX7OCqcT5_9njcyfg59cOAGVbUlRtreR7ZcDiV1rRhxrMQbHdoRg1WLmB8Z2IzYSyEw_JEyxwuHRH15mAPf_zKwxp06wFbUvjEitEiWPj6v4Wuh14vg8FVwc-uYuESbQ4qkS-8p91l5UIGRNk89RX7QNRIDYve52Myw_rEXpQH4P2IyA')"
+                  >
+                  </div>
+                </div>
+                <p class="trust-label">Trusted by 200+ homeowners</p>
+              </div>
+            </div>
+
+            <div class="hero-image-side order-mobile-1 order-desktop-2">
+              <div class="hero-image-wrapper">
+                <div
+                  class="hero-bg-img"
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD97WuJtWflcbcJsOR5uI3sc9nXIg0pOYWZNw0v3_3aj20mIRO6XEdAjyUEXfH6ds8wKfgrhrtnGDtilvUdz6SyCn4UReUFtu9rAsuQt1rZWEcKNUThmRy8z96THsuj636Q8iFiCY45uNCsHMX0XT6vqUNFzDrR2-aLSp4gu-HDq0nbW4ef_zGPs6-tZOpQsMshYQIculmT2DoM39zYpps2bpFgpVX-pLAJPE3fhlGm2ETYFFlXWw0Herhp3DzrY3xaet_tAonLIoY');"
+                >
+                </div>
+
+                <div class="hero-float-card">
+                  <div class="float-icon">
+                    <span class="material-symbols-outlined">schedule</span>
+                  </div>
+                  <div>
+                    <p
+                      style="font-size: 0.875rem; font-weight: 700; margin-bottom: 0.1rem;"
+                    >
+                      Fast Turnaround
+                    </p>
+                    <p style="font-size: 0.75rem; color: #68797d;">
+                      Most repairs finished in 24h
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-padding bg-white" id="services">
+          <div class="container">
+            <div class="section-header">
+              <div>
+                <span class="section-eyebrow">Our Expertise</span>
+                <h3 class="section-heading">
+                  Comprehensive solutions for <br />indoor and outdoor living.
+                </h3>
+              </div>
+              <a href="#" class="link-arrow">
+                View all services <span class="material-symbols-outlined"
+                  >trending_flat</span
+                >
+              </a>
+            </div>
+
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="service-card-wrapper">
+                  <img
+                    class="service-card-img"
+                    src="/images/kitchen_assembly.webp"
+                    alt="Kitchen assembly"
+                  />
+
+                  <div class="service-card-overlay"></div>
+
+                  <div class="service-card-content">
+                    <div class="service-icon-box">
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-size: 2rem;">construction</span
+                      >
+                    </div>
+                    <div class="service-card-text">
+                      <h4 class="service-title">Furniture Assembly</h4>
+                      <p class="text-muted" style="font-size: 0.875rem;">
+                        Precision assembly for all brands, from simple
+                        bookshelves to complex wardrobes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-card-wrapper">
+                  <img
+                    class="service-card-img"
+                    src="/images/kitchen_assembly.webp"
+                    alt="Kitchen assembly"
+                  />
+
+                  <div class="service-card-overlay"></div>
+
+                  <div class="service-card-content">
+                    <div class="service-icon-box">
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-size: 2rem;">construction</span
+                      >
+                    </div>
+                    <div class="service-card-text">
+                      <h4 class="service-title">Furniture Assembly</h4>
+                      <p class="text-muted" style="font-size: 0.875rem;">
+                        Precision assembly for all brands, from simple
+                        bookshelves to complex wardrobes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-card-wrapper">
+                  <img
+                    class="service-card-img"
+                    src="/images/kitchen_assembly.webp"
+                    alt="Kitchen assembly"
+                  />
+
+                  <div class="service-card-overlay"></div>
+
+                  <div class="service-card-content">
+                    <div class="service-icon-box">
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-size: 2rem;">construction</span
+                      >
+                    </div>
+                    <div class="service-card-text">
+                      <h4 class="service-title">Furniture Assembly</h4>
+                      <p class="text-muted" style="font-size: 0.875rem;">
+                        Precision assembly for all brands, from simple
+                        bookshelves to complex wardrobes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service-card">
+                <div class="service-card-wrapper">
+                  <img
+                    class="service-card-img"
+                    src="/images/kitchen_assembly.webp"
+                    alt="Kitchen assembly"
+                  />
+
+                  <div class="service-card-overlay"></div>
+
+                  <div class="service-card-content">
+                    <div class="service-icon-box">
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-size: 2rem;">construction</span
+                      >
+                    </div>
+                    <div class="service-card-text">
+                      <h4 class="service-title">Furniture Assembly</h4>
+                      <p class="text-muted" style="font-size: 0.875rem;">
+                        Precision assembly for all brands, from simple
+                        bookshelves to complex wardrobes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-padding" id="about">
+          <div class="container">
+            <div class="section-header">
+              <div>
+                <span class="section-eyebrow">Meet the Pro</span>
+                <h3 class="section-heading">
+                  Personalized service you <br /> won't get from a big agency.
+                </h3>
+              </div>
+              <a href="/about-me" class="link-arrow">
+                View more about me <span class="material-symbols-outlined"
+                  >trending_flat</span
+                >
+              </a>
+            </div>
+
+            <div class="about-grid">
+              <div class="portrait-wrapper">
+                <div class="portrait-frame">
+                  <div
+                    class="portrait-img"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcIdTx4A9Wr_-dw-nMPDc3iuUldSYzqlxLNorHT-6A2c1qmNubAebkuUEXRjP1rO-8GD_LvUmiWT_7epqgZdfoT_de1Ms6d9QALXY1-uU0ZdoZouV-rX-KGVL_1VbWSLDjHZuHaNAX8ybGsCsv9V4Dj76gshoHsuEUsj7lwkIz0oGQoJbbUVrXqqw_TmbB2M_JaPrxUNDrcwplV_KdaXN7coTvXw2CvfgwpXNOBlHgQUo2ankar6j8Nf59PEaJfSlFmREuSZ8Mh0M');"
+                  >
+                  </div>
+                </div>
+                <div class="experience-badge">
+                  <span class="exp-number">15+</span>
+                  <span class="exp-label">Years Experience</span>
+                </div>
+              </div>
+
+              <div class="about-content">
+                <!-- <div>
+                  <span class="section-eyebrow">Meet the Pro</span>
+                  <h3 class="section-heading">
+                    Personalized service you won't get from a big agency.
+                  </h3>
+                </div> -->
+                <p class="about-text">
+                  I'm Marko Martinovic. When you hire Martinovic Service, you're
+                  hiring me. No subcontractors, no miscommunication—just
+                  reliable, honest work delivered on time.
+                </p>
+
+                <div class="checklist-grid">
+                  <div class="flex-center-v gap-2">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="font-bold">Fully Insured</span>
+                  </div>
+                  <div class="flex-center-v gap-2">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="font-bold">Transparent Pricing</span>
+                  </div>
+                  <div class="flex-center-v gap-2">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="font-bold">Always Punctual</span>
+                  </div>
+                  <div class="flex-center-v gap-2">
+                    <span class="material-symbols-outlined text-primary"
+                      >check_circle</span
+                    >
+                    <span class="font-bold">Clean Workspace</span>
+                  </div>
+                </div>
+
+                <div class="quote-box">
+                  <p class="text-main italic font-medium">
+                    "My goal is simple: to leave every home better than I found
+                    it and every customer with a smile."
+                  </p>
+                  <p
+                    style="margin-top: 1rem; font-size: 0.875rem; font-weight: 700;"
+                  >
+                    — Marko Martinovic
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-padding bg-gray" id="testimonials">
+          <div class="container">
+            <div class="testimonials-header">
+              <h3 class="section-heading">What your neighbors say</h3>
+            </div>
+
+            <div class="testimonials-grid">
+              <div class="testimonial-card">
+                <div class="stars">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="review-text">
+                  "Marko fixed our leaking sink and assembled three large IKEA
+                  cabinets in just one afternoon. Impeccable work and very
+                  clean!"
+                </p>
+                <div class="reviewer-profile">
+                  <div
+                    class="reviewer-avatar"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2Sb45IMTl0yhd-HjC7oJ80LIpvUVc8FtckZ5vB4ieeAJSg2JNTMIDL2i-CuaE8-bYvoR8MaqThi277nKUUGefy2tKBN3uj2LL5C680aMwSIEE63R0o5K-fsxFixcuQ-2c6XcyOecvYpEtY-KyQjbK_VvLWn8K4pEsr8twS8L3zvigV2MK_PsbpnaLRAjepFeOgy25hjg_-3hNQomMJsiAGatARnjTv0mf4X7bWcByld60-_SugI41wjLLwCDanfvyZqkGPGtkOPw');"
+                  >
+                  </div>
+                  <div>
+                    <p class="reviewer-name">Sarah Jenkins</p>
+                    <p class="reviewer-type">Homeowner</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="stars">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="review-text">
+                  "Finally a handyman who actually shows up when he says he
+                  will. Our garden looks incredible after the seasonal cleanup."
+                </p>
+                <div class="reviewer-profile">
+                  <div
+                    class="reviewer-avatar"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDF0oDkBGb6CLOo1c7_gBXqjxD-JRH1zLGomIV5uVMv6qr9d28s_lEenvNXPKpxK6RgKVUAGk9X1uzjDZ8vFOttEnWK15mBKgkJzhbb-bngZ5lcg7K3csSt_lYa4-jN2xMyTxTVzzONQHyCgjbLFI8tvXEMljMfUPcQ-t73A4iO9qg4W4LGwxa7BSLm4ZaaN4zYDioy6RLClMX_qfiXGKBb9_dXBFC3PWDZ1AGvO7QUgk00zgMA3xkb100GcHGiq-kOO8SOl97Jwgg');"
+                  >
+                  </div>
+                  <div>
+                    <p class="reviewer-name">David Thompson</p>
+                    <p class="reviewer-type">Local Resident</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="stars">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="review-text">
+                  "Professional, polite, and very fair pricing. I highly
+                  recommend Marko for any repairs around the house."
+                </p>
+                <div class="reviewer-profile">
+                  <div
+                    class="reviewer-avatar"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDp93P_AawMsTk2gPskBr0qFiF1TiKQey4QXHbTg43GB2-7eASU6-9DBcAUdaVNuoUy9b_sKx7ZQfqpniMt2D5JhrqFGceuruHDe-a_zF9AYwna1mR3HFJa0s5aipN6hYU9Bki5tezgdxIm3x3Ax5gjgGiZ0sCcnREaAtFRg89PVSulqD1_VF6rD_qc6e_UOMQDlnqyCtvrbGyNzudMoz5oV_8bJPRj-z8L4oJKSYPyx05HC_XKajO3aM1oVuVOKQm-lAtIUwnAdI');"
+                  >
+                  </div>
+                  <div>
+                    <p class="reviewer-name">Elena Rodriguez</p>
+                    <p class="reviewer-type">Business Owner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-padding" id="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-left">
+                <div>
+                  <h3
+                    style="font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;"
+                  >
+                    Ready to start?
+                  </h3>
+                  <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">
+                    Fill out the form and I'll get back to you within 24 hours
+                    with a free estimate.
+                  </p>
+
+                  <div class="contact-details">
+                    <div class="flex-center-v gap-4">
+                      <span class="material-symbols-outlined">call</span>
+                      <p class="font-bold">+1 (555) 123-4567</p>
+                    </div>
+                    <div class="flex-center-v gap-4">
+                      <span class="material-symbols-outlined">mail</span>
+                      <p class="font-bold">marko@martinovicservice.com</p>
+                    </div>
+                    <div class="flex-center-v gap-4">
+                      <span class="material-symbols-outlined">pin_drop</span>
+                      <p class="font-bold">Greater Metropolitan Area</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-socials">
+                  <div class="social-btn">
+                    <svg style="width:20px; height:20px;"
+                      ><path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                      ></path></svg
+                    >
+                  </div>
+                  <div class="social-btn">
+                    <svg style="width:20px; height:20px;"
+                      ><path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      ></path></svg
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-right">
+                <form class="form-grid">
+                  <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input
+                      class="form-input"
+                      placeholder="John Doe"
+                      type="text"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input
+                      class="form-input"
+                      placeholder="john@example.com"
+                      type="email"
+                    />
+                  </div>
+                  <div class="form-group span-2">
+                    <label class="form-label">Service Category</label>
+                    <select class="form-input">
+                      <option>Select a service</option>
+                      <option>Furniture Assembly</option>
+                      <option>Kitchen Assembly</option>
+                      <option>Small Repairs</option>
+                      <option>Gardening</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group span-2">
+                    <label class="form-label">Project Details</label>
+                    <textarea
+                      class="form-input"
+                      placeholder="Briefly describe what you need help with..."
+                      rows="4"></textarea>
+                  </div>
+                  <button class="btn btn-primary span-2 btn-lg" type="submit"
+                    >Send Inquiry</button
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container footer-grid">
+          <div>
+            <div class="brand-logo" style="margin-bottom: 1.5rem;">
+              <div class="brand-icon" style="width: 24px; height: 24px;">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="brand-name" style="font-size: 1.125rem;">
+                Martinovic Service
+              </h2>
+            </div>
+            <p
+              class="text-muted"
+              style="max-width: 300px; margin-bottom: 1.5rem;"
+            >
+              Professional handyman and gardening services for the local
+              community. Built on trust, quality, and direct personal service.
+            </p>
+            <p class="text-muted" style="font-size: 0.75rem;">
+              © 2023 Martinovic Service. All rights reserved.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Links</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 1.5rem;">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+---
+const currentPath = Astro.url.pathname;
+
+// Helper to highlight active links
+// const isActive = (href) => currentPath === href;
+---
+
+
+<header>
+  <nav class="site-nav" aria-label="Primary">
+    <!-- burger button (mobile only) -->
+    <a class="brand-logo" href="/">
+      <div class="brand-icon">
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+          <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"></path>
+        </svg>
+      </div>
+      <h3 class="brand-name">Martinovic Service</h3>
+    </a>
+
+    <button
+      class="mobile-nav-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-controls="primaryNav"
+      aria-expanded="false"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- overlay (clicking it closes menu) -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- same nav list for desktop + mobile drawer -->
+    <ul class="nav-list" id="primaryNav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about-me">About me</a></li>
+      <li><a href="/furniture-assembly">Furniture Assembly</a></li>
+      <li><a href="/kitchen-assembly">Kitchen Assembly</a></li>
+      <li><a href="/garden-maintenance">Garden Maintenance</a></li>
+      <li><a href="/#contact">Contact</a></li>
+
+      <!-- Optional: CTA only inside mobile drawer -->
+      <li class="nav-cta">
+        <a class="btn btn-primary" href="/#contact">Get a Quote</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script type="module">
+  const initMobileNav = () => {
+    const btn = document.querySelector(".mobile-nav-toggle");
+    const navList = document.querySelector(".nav-list");
+    const overlay = document.querySelector("#navOverlay");
+
+    if (!btn || !navList || !overlay ) return;
+
+    // prevent double-binding (useful if you later enable Astro view transitions)
+    if (btn.dataset.bound === "1") return;
+    btn.dataset.bound = "1";
+
+    const closeMenu = () => {
+      navList.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      btn.setAttribute("aria-expanded", "false");
+    };
+
+    const openMenu = () => {
+      navList.classList.add("active");
+      overlay.classList.add("active");
+      document.body.classList.add("menu-open");
+      btn.setAttribute("aria-expanded", "true");
+    };
+
+    const toggleMenu = () => {
+      navList.classList.contains("active") ? closeMenu() : openMenu();
+    };
+
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+    });
+
+    btn.addEventListener("click", toggleMenu);
+    overlay.addEventListener("click", closeMenu);
+
+    // close when a nav link is clicked
+    navList
+      .querySelectorAll("a")
+      .forEach((a) => a.addEventListener("click", closeMenu));
+
+    // close on ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+  };
+
+  initMobileNav();
+  document.addEventListener("astro:page-load", initMobileNav);
+</script>
