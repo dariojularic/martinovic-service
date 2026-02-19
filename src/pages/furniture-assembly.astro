@@ -6,7 +6,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   title="Martinovic Service | Professional Handyman & Gardening"
   description="Professional repairs, furniture & kitchen assembly, transport and gardening services."
 >
-
   <main>
     <section class="hero-about flex-center">
       <div class="hero-bg">
@@ -18,12 +17,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
-        <h1 class="hero-title">Professional Furniture Assembly</h1>
+        <h1 class="hero-title hero-title-service">
+          Professional Furniture Assembly
+        </h1>
         <a class="btn btn-primary btn-xl">Get a Quote</a>
       </div>
     </section>
 
-    <section class="section services-section">
+    <section class="section-padding services-section">
       <div class="container services-grid">
         <div class="services-text">
           <div class="section-intro">
@@ -82,9 +83,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </section>
 
-    <section class="section bg-light">
+    <section class="section-padding how-it-works-section">
       <div class="container">
-        <div class="text-center mb-large">
+        <div class="text-center mb-64">
           <h2>How It Works</h2>
           <p class="subtitle">
             Three simple steps to a beautifully furnished home.
@@ -123,9 +124,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </section>
 
-    <section class="section">
+    <section class="section-padding">
       <div class="container">
-        <div class="text-center mb-large">
+        <div class="text-center mb-64">
           <h2>Transparent Pricing</h2>
           <p class="subtitle">
             Quality assembly services with no hidden fees. Starting rates for
@@ -148,7 +149,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </div>
 
           <div class="pricing-card popular">
-            <div class="popular-tag">Most Popular</div>
+            <!-- <div class="popular-tag">Most Popular</div> -->
             <div class="card-icon">
               <span class="material-symbols-outlined">bed</span>
             </div>
@@ -179,9 +180,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </div>
     </section>
 
-    <section class="section bg-light">
+    <section class="section-padding bg-light">
       <div class="container">
-        <div class="text-center mb-large">
+        <div class="text-center mb-64">
           <h2>Project Showcase</h2>
           <p class="subtitle">
             Browse our recent work. From flat-pack boxes to perfectly assembled
@@ -329,8 +330,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </div>
         </div>
 
-        <div class="text-center mt-large">
+        <!-- <div class="text-center mt-large">
           <a class="btn btn-primary btn-lg">View More Projects</a>
+        </div> -->
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg"> Jetzt Anrufen </a>
+          <a href="/about-me" class="btn btn-secondary btn-lg">
+            Fotos Ansehen
+          </a>
         </div>
       </div>
     </section>

@@ -40,7 +40,7 @@ const currentPath = Astro.url.pathname;
       <li><a href="/furniture-assembly">MÖBELMONTAGE</a></li>
       <li><a href="/kitchen-assembly">KÜCHENMONTAGE</a></li>
       <li><a href="/garden-maintenance">GARTENPFLEGE</a></li>
-      <li><a href="/#contact">KONTAKT</a></li>
+      <!-- <li><a href="/#contact">KONTAKT</a></li> -->
 
       <!-- Optional: CTA only inside mobile drawer -->
       <li class="nav-cta">
@@ -84,18 +84,16 @@ const currentPath = Astro.url.pathname;
       btn.classList.toggle('active');
     });
 
+    overlay.addEventListener("click", () => {
+      btn.classList.toggle("active")
+    })
+
     btn.addEventListener("click", toggleMenu);
     overlay.addEventListener("click", closeMenu);
 
-    // close when a nav link is clicked
     navList
       .querySelectorAll("a")
       .forEach((a) => a.addEventListener("click", closeMenu));
-
-    // close on ESC
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeMenu();
-    });
   };
 
   initMobileNav();
