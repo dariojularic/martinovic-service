@@ -301,19 +301,20 @@ header {
   position: fixed;
   top: 0;
   z-index: 100;
-  background-color: rgba(247, 247, 247, 0.9);
+  /* background-color: rgba(168, 168, 168, 0.28); */
+  background-color: #ECEEEF;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid #eceeef;
   width: 100%;
   /* height: 64px; */
 }
 
-.nav-container {
+/* .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-}
+} */
 
 .brand-logo {
   display: flex;
@@ -402,6 +403,7 @@ header {
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .hero-trust { display: flex; align-items: center; gap: 1.5rem; }
@@ -994,14 +996,15 @@ footer {
 .img-half.border-left { border-left: 2px solid var(--primary); }
 
 .img-badge {
-    position: absolute;
-    top: 0.5rem;
-    background: var(--primary);
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0.125rem 0.5rem;
-    border-radius: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  background: var(--primary);
+  font-size: 0.65rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  color: whitesmoke;
 }
 
 .img-badge.left { left: 0.5rem; }
@@ -1025,6 +1028,10 @@ footer {
   /* MOBITEL */
   /* FURNITURE ASSEMBLY */
   .section-padding { padding: 3rem 0; }
+
+  .hero-section { padding: 5rem 0 3rem 0}
+
+  .container { padding: 0 1rem}
 
   .section-header {
     flex-direction: column;
@@ -1187,7 +1194,7 @@ footer {
   .img-half img { width: 100%; height: 100%; object-fit: cover; }
   .img-half.border-left { border-left: 2px solid var(--primary); }
 
-  .img-badge {
+  /* .img-badge {
       position: absolute;
       top: 0.5rem;
       background: var(--primary);
@@ -1196,10 +1203,8 @@ footer {
       text-transform: uppercase;
       padding: 0.125rem 0.5rem;
       border-radius: 0.25rem;
-  }
+  } */
 
-  .img-badge.left { left: 0.5rem; }
-  .img-badge.right { right: 0.5rem; }
 
   .project-info { padding: 1.25rem; }
   .project-info h4 { font-size: 1.125rem; margin-bottom: 0.25rem; }
@@ -1318,10 +1323,10 @@ footer {
 
 
   .site-nav {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    height: 64px;
+    /* display: flex;
+    align-items: center; */
+    /* gap: 0; */
+    /* height: 64px; */
     padding: 0 16px;
     justify-content: normal;
   }
