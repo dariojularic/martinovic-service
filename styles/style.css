@@ -19,14 +19,11 @@
     --border-light: #dbe4f1;
     --radius-md: 4px;          /* Sharper corners feel more "Engineering" */
 
-    /* ovo trebam da nemam horizontalni scroll */
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
 }
-/* =========================================
-   2. RESET & BASE STYLES
-   ========================================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,11 +40,10 @@ body {
 
 h1, h2, h3, h4, .brand-name, .btn {
   font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase; /* Standard for German Handwerker branding */
+  text-transform: uppercase;
   letter-spacing: -0.02em;
 }
 
-/* Images */
 img, svg {
   display: block;
   max-width: 100%;
@@ -70,9 +66,6 @@ li a {
   vertical-align: middle;
 }
 
-/* =========================================
-   3. UTILITY CLASSES
-   ========================================= */
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -82,9 +75,6 @@ li a {
 .text-primary { color: var(--primary); }
 .font-bold { font-weight: 700; }
 .uppercase { text-transform: uppercase; }
-
-
-/* about me style */
 
 .text-muted { color: var(--text-gray); }
 .text-center { text-align: center; }
@@ -112,7 +102,6 @@ li a {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 1rem;
 }
 
@@ -166,10 +155,6 @@ li a {
 
 .facts-list .material-symbols-outlined { color: var(--primary); }
 
-/* -----------------------------------------
-   7. VALUES & CTA BANNER
-   ----------------------------------------- */
-
 .value-item {
   background: white;
   padding: 3rem 2rem;
@@ -206,22 +191,16 @@ li a {
 
 .btn-white { background: white; color: var(--primary); }
 .btn-outline { border: 2px solid rgba(255,255,255,0.3); color: white; }
-/* about me style */
 
 .bg-white { background-color: var(--bg-white); }
 .bg-gray { background-color: #eceeef; }
 .section-padding { padding: 5rem 0; }
 
-/* Flex Helpers */
 .flex-center-v { display: flex; align-items: center; }
 .flex-center { display: flex; align-items: center; justify-content: center; }
 .gap-2 { gap: 0.5rem; }
 .gap-4 { gap: 1rem; }
 
-/* =========================================
-   4. COMPONENT STYLES
-   ========================================= */
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -235,7 +214,6 @@ li a {
   border: none;
   font-size: 0.95rem;
   border-radius: 4px;
-  /* width: 100%; */
 }
 
 
@@ -243,7 +221,6 @@ li a {
   background-color: var(--accent);
   color: whitesmoke;
   border-radius: var(--radius-md);
-  /* padding: 1rem 2rem; */
   width: 260px;
 }
 
@@ -282,7 +259,6 @@ li a {
 .btn-secondary:hover { background-color: #f9f9f9; }
 .btn-lg { padding: 1rem 2rem; border-radius: var(--radius-md); font-size: 1.125rem; }
 
-/* Form Inputs */
 .form-input {
   width: 100%;
   padding: 0.75rem 1rem;
@@ -298,27 +274,15 @@ li a {
   box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.2);
 }
 
-/* =========================================
-   5. LAYOUT: HEADER
-   ========================================= */
 header {
   position: fixed;
   top: 0;
   z-index: 100;
-  /* background-color: rgba(168, 168, 168, 0.28); */
   background-color: #ECEEEF;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid #eceeef;
   width: 100%;
-  /* height: 64px; */
 }
-
-/* .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-} */
 
 .brand-logo {
   display: flex;
@@ -349,9 +313,6 @@ header {
   height: 64px;
 }
 
-/* =========================================
-   6. SECTION: HERO
-   ========================================= */
 .hero-section { padding: 4rem 0; position: relative; }
 
 .hero-grid {
@@ -465,11 +426,6 @@ header {
   display: flex;
 }
 
-/* =========================================
-   7. SECTION: SERVICES
-   ========================================= */
-
-
 .section-header {
   display: flex;
   flex-direction: row;
@@ -477,7 +433,6 @@ header {
   justify-content: space-between;
   margin-bottom: 3rem;
 }
-
 
 .section-eyebrow .eyebrow {
   color: var(--primary);
@@ -551,7 +506,7 @@ header {
 .service-card-wrapper {
   position: relative;
   overflow: hidden;
-  border-radius: 16px; /* optional */
+  border-radius: 16px;
   height: 100%;
 }
 
@@ -588,11 +543,6 @@ header {
   background-color: rgba(0, 0, 0, 0.047);
 }
 
-
-
-/* =========================================
-   8. SECTION: ABOUT
-   ========================================= */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -625,13 +575,13 @@ header {
 .experience-badge {
   position: absolute;
   bottom: -1.5rem;
-  right: -0.5rem;
+  right: 0.5rem;
   background-color: var(--primary);
   color: white;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  display: none; /* Hidden on mobile */
+  display: none;
 }
 
 .exp-number {
@@ -670,9 +620,6 @@ header {
   border-radius: 0.5rem;
 }
 
-/* =========================================
-   9. SECTION: TESTIMONIALS
-   ========================================= */
 .testimonials-header { text-align: center; margin-bottom: 4rem; }
 .testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
 
@@ -706,9 +653,6 @@ header {
 .reviewer-name { font-weight: 700; font-size: 0.875rem; margin: 0; }
 .reviewer-type { font-size: 0.75rem; color: var(--text-gray); margin: 0; }
 
-/* =========================================
-   10. SECTION: CONTACT
-   ========================================= */
 .contact-card {
   background-color: var(--primary);
   border-radius: 1.5rem;
@@ -753,9 +697,6 @@ header {
 .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
 .form-label { font-size: 0.875rem; font-weight: 700; }
 
-/* =========================================
-   11. FOOTER
-   ========================================= */
 footer {
   background-color: white;
   border-top: 1px solid #eceeef;
@@ -789,7 +730,6 @@ footer {
 .mobile-nav-toggle { display: none; }
 .nav-close-row { display: none; }
 
-/* FURNITURE ASSEMBLY */
 .hero-img {
   position: absolute;
   inset: 0;
@@ -809,18 +749,6 @@ footer {
   color: white;
 }
 
-/* FURNITURE ASSEMBLY */
-
-/* =========================================
-   13. MEDIA QUERIES (RESPONSIVENESS)
-   ========================================= */
-/* about me style */
-
-/* .order-desktop-1 { order: 1; }
-.order-desktop-2 { order: 2; } */
-
-/* .hero-grid { grid-template-columns: 1fr 1fr; } */
-/* .hero-title { font-size: 4.5rem; } */
 
 .services-grid { grid-template-columns: 1fr 1fr; }
 
@@ -884,12 +812,8 @@ footer {
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-
 .badge-title { font-size: 2.25rem; font-weight: 900; line-height: 1; }
 .badge-subtitle { font-size: 0.875rem; font-weight: 500; }
-
-
-
 
 .steps-grid {
   display: grid;
@@ -909,7 +833,6 @@ footer {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  /* background: rgba(17, 212, 17, 0.2); */
   background: rgba(var(--primary-rgb), 0.1);
   color: var(--primary);
   display: flex;
@@ -933,32 +856,8 @@ footer {
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
-  /* border-color: var(--primary); */
   box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
 }
-
-
-/* .pricing-card:hover { border-color: var(--primary); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); } */
-
-/* .pricing-card.popular {
-    border-color: var(--primary);
-    position: relative;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-    background: white;
-    overflow: hidden;
-}
-
-.popular-tag {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--primary);
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0.25rem 0.75rem;
-    border-bottom-left-radius: 0.5rem;
-} */
 
 .card-icon { color: var(--primary); margin-bottom: 1.5rem; }
 .card-desc { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1; }
@@ -1018,10 +917,6 @@ footer {
 .project-info h4 { font-size: 1.125rem; margin-bottom: 0.25rem; }
 .project-info p { font-size: 0.875rem; color: var(--text-muted); }
 
-
-
-
-
 @media (min-width: 1024px) {
     /* TABLET */
   .services-grid { grid-template-columns: 1fr 1fr; }
@@ -1030,7 +925,6 @@ footer {
 @media (max-width: 767px) {
 
   /* MOBITEL */
-  /* FURNITURE ASSEMBLY */
   .section-padding { padding: 3rem 0; }
 
   .hero-section { padding: 5rem 0 3rem 0}
@@ -1040,7 +934,6 @@ footer {
   .section-header {
     flex-direction: column;
     gap: 1.5rem;
-    /* margin-bottom: 3rem; */
   }
 
   .hero-grid {
@@ -1052,11 +945,9 @@ footer {
     gap: 1rem;
   }
 
-
   .footer-grid {
     grid-template-columns: 1fr;
   }
-
 
   .hero-img {
     position: absolute;
@@ -1081,8 +972,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
-
 
   .categories-grid {
     display: grid;
@@ -1154,9 +1043,7 @@ footer {
   .step-card p { color: var(--text-muted); }
 
   .pricing-grid {
-    /* display: grid; */
     grid-template-columns: 1fr;
-    /* gap: 2rem; */
   }
 
   .card-icon { color: var(--primary); margin-bottom: 1.5rem; }
@@ -1198,28 +1085,9 @@ footer {
   .img-half img { width: 100%; height: 100%; object-fit: cover; }
   .img-half.border-left { border-left: 2px solid var(--primary); }
 
-  /* .img-badge {
-      position: absolute;
-      top: 0.5rem;
-      background: var(--primary);
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 0.125rem 0.5rem;
-      border-radius: 0.25rem;
-  } */
-
-
   .project-info { padding: 1.25rem; }
   .project-info h4 { font-size: 1.125rem; margin-bottom: 0.25rem; }
   .project-info p { font-size: 0.875rem; color: var(--text-muted); }
-
-
-
-  /* FURNITURE ASSEMBLY */
-
-
-  /* ABOUT ME mobile*/
 
   .hero-title {
     font-size: 2rem;
@@ -1227,13 +1095,11 @@ footer {
   }
 
   .hero-title-service {
-
     color: whitesmoke;
     text-align: center;
   }
 
   .grid-2-col { grid-template-columns: 1fr; }
-
 
   .hero-about {
     height: 640px;
@@ -1276,26 +1142,18 @@ footer {
     padding: 2.5rem 1.5rem;
   }
 
-  /* ABOUT ME */
-
-
-  /* .order-mobile-1 { order: 1; } */
-  /* .order-mobile-2 { order: 2; } */
   .services-grid {
     grid-template-columns: 1fr;
   }
+
   .about-grid {
     grid-template-columns: 1fr;
-
   }
 
   .portrait-img {
     height: 400px;
     width: 320px;
   }
-
-
-  /* .mobile-nav-toggle { display: inline-block; } */
 
   .mobile-nav-toggle {
     display: flex;
@@ -1305,20 +1163,17 @@ footer {
     top: 12px;
     right: 12px;
     z-index: 2000;
-    /* background-color: var(--bg-light); */
     background: transparent;
     padding: 4px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: none;
   }
 
   .bar {
     display: block;
     width: 22px;
     height: 3px;
-    background: currentColor;
+    background: black;
     transition: 0.3s;
-    /* margin: 5px 0; */
   }
 
   .mobile-nav-toggle.active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
@@ -1327,10 +1182,6 @@ footer {
 
 
   .site-nav {
-    /* display: flex;
-    align-items: center; */
-    /* gap: 0; */
-    /* height: 64px; */
     padding: 0 16px;
     justify-content: normal;
   }
