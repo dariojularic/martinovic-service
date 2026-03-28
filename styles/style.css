@@ -10,7 +10,7 @@
     --bg-light: #F8F9FA;       /* Clean Studio White */
     --text-main: #131616;      /* Keep text dark petrol for cohesion */
     --text-gray: #4E545C;      /* Slate Gray for descriptions */
-    --text-muted: #68797d;
+    /* --text-muted: #68797d; */
     --bg-white: #ffffff;
 
     --bg-dark-card: #1c2021;
@@ -76,7 +76,7 @@ li a {
 .font-bold { font-weight: 700; }
 .uppercase { text-transform: uppercase; }
 
-.text-muted { color: var(--text-gray); }
+/* .text-muted { color: var(--text-gray); } */
 .text-center { text-align: center; }
 .mb-24 { margin-bottom: 24px; }
 .mb-64 { margin-bottom: 64px; }
@@ -117,7 +117,7 @@ li a {
   margin-bottom: 2rem;
 }
 
-.prose p { margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.1rem; }
+.prose p { margin-bottom: 1.5rem; color: var(--text-gray); font-size: 1.1rem; }
 
 .quote {
   border-left: 4px solid var(--accent);
@@ -787,7 +787,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.cat-desc { font-size: 0.875rem; color: var(--text-muted); margin-top: 0.25rem; }
+.cat-desc { font-size: 0.875rem; color: var(--text-gray); margin-top: 0.25rem; }
 
 .services-image-wrapper { position: relative; }
 
@@ -840,7 +840,7 @@ footer {
   justify-content: center;
 }
 
-.step-card p { color: var(--text-muted); }
+.step-card p { color: var(--text-gray); }
 
 .pricing-grid {
   display: grid;
@@ -860,10 +860,10 @@ footer {
 }
 
 .card-icon { color: var(--primary); margin-bottom: 1.5rem; }
-.card-desc { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1; }
+.card-desc { font-size: 0.875rem; color: var(--text-gray); margin-bottom: 1.5rem; flex-grow: 1; }
 
 .price-box { margin-top: auto; }
-.price-label { font-size: 0.875rem; color: var(--text-muted); display: block; }
+.price-label { font-size: 0.875rem; color: var(--text-gray); display: block; }
 .price-value { font-size: 2.25rem; font-weight: 900; color: var(--text-main); }
 
 .projects-grid {
@@ -915,7 +915,7 @@ footer {
 
 .project-info { padding: 1.25rem; }
 .project-info h4 { font-size: 1.125rem; margin-bottom: 0.25rem; }
-.project-info p { font-size: 0.875rem; color: var(--text-muted); }
+.project-info p { font-size: 0.875rem; color: var(--text-gray); }
 
 @media (min-width: 1024px) {
     /* TABLET */
@@ -926,6 +926,10 @@ footer {
 
   /* MOBITEL */
   .section-padding { padding: 3rem 0; }
+
+  .text-muted {
+    line-height: 1.2;
+  }
 
   .link-arrow {
     align-self: end;
@@ -1001,7 +1005,7 @@ footer {
     margin-bottom: 0.5rem;
   }
 
-  .cat-desc { font-size: 0.875rem; color: var(--text-muted); margin-top: 0.25rem; }
+  .cat-desc { font-size: 0.875rem; color: var(--text-gray); margin-top: 0.25rem; }
 
   .services-image-wrapper { position: relative; }
 
@@ -1044,17 +1048,17 @@ footer {
     gap: 1.5rem;
   }
 
-  .step-card p { color: var(--text-muted); }
+  .step-card p { color: var(--text-gray); }
 
   .pricing-grid {
     grid-template-columns: 1fr;
   }
 
   .card-icon { color: var(--primary); margin-bottom: 1.5rem; }
-  .card-desc { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1; }
+  .card-desc { font-size: 0.875rem; color: var(--text-gray); margin-bottom: 1.5rem; flex-grow: 1; }
 
   .price-box { margin-top: auto; }
-  .price-label { font-size: 0.875rem; color: var(--text-muted); display: block; }
+  .price-label { font-size: 0.875rem; color: var(--text-gray); display: block; }
   .price-value { font-size: 2.25rem; font-weight: 900; color: var(--text-main); }
 
   .projects-grid {
@@ -1091,7 +1095,7 @@ footer {
 
   .project-info { padding: 1.25rem; }
   .project-info h4 { font-size: 1.125rem; margin-bottom: 0.25rem; }
-  .project-info p { font-size: 0.875rem; color: var(--text-muted); }
+  .project-info p { font-size: 0.875rem; color: var(--text-gray); }
 
   .hero-title {
     font-size: 2rem;
