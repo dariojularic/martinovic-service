@@ -35,11 +35,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <div class="hero-image-side order-mobile-1 order-desktop-2">
           <div class="hero-image-wrapper">
-            <div
-              class="hero-bg-img"
-            >
-            <img fetchpriority="high" src="/images/hero.webp" alt="">
-            </div>
+            <img fetchpriority="high" src="/images/hero.webp" width="360" height="400" alt="" />
+            <!-- <div class="hero-bg-img"> -->
+            <!-- </div> -->
 
             <!-- <div class="hero-float-card">
               <div class="float-icon">
@@ -82,6 +80,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="service-card">
               <div class="service-card-wrapper">
                 <img
+                  loading="lazy"
                   class="service-card-img"
                   src="/images/möbelmontage.webp"
                   alt="Kitchen assembly"
@@ -114,6 +113,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="service-card">
               <div class="service-card-wrapper">
                 <img
+                  loading="lazy"
                   class="service-card-img"
                   src="/images/küchenmontage.webp"
                   alt="Kitchen assembly"
@@ -145,6 +145,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="service-card">
               <div class="service-card-wrapper">
                 <img
+                  loading="lazy"
                   class="service-card-img"
                   src="/images/gartenpflege.webp"
                   alt="Kitchen assembly"
@@ -176,6 +177,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="service-card">
               <div class="service-card-wrapper">
                 <img
+                  loading="lazy"
                   class="service-card-img"
                   src="/images/hausreparaturen.webp"
                   alt="Kitchen assembly"
@@ -191,9 +193,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     >
                   </div>
                   <div class="service-card-text">
-                    <h4 class="service-title">
-                      Hausreparaturen
-                    </h4>
+                    <h4 class="service-title">Hausreparaturen</h4>
                     <p class="text-muted" style="font-size: 0.875rem;">
                       Kleine Reparaturen, Wartungsarbeiten und
                       Handwerkerleistungen in München - schnell, zuverlässing
@@ -222,10 +222,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <div class="about-grid">
           <div class="portrait-wrapper">
             <div class="portrait-frame">
-              <div
-                class="portrait-img"
-              >
-              <img src="/images/krunoslavmartinovic.webp" alt="">
+              <div class="portrait-img">
+                <img
+                  loading="lazy"
+                  src="/images/krunoslavmartinovic.webp"
+                  alt=""
+                />
               </div>
             </div>
             <div class="experience-badge">
