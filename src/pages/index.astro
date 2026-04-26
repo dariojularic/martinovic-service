@@ -11,12 +11,9 @@ import heroImage from "/public/images/hero.webp";
   <main>
     <section class="hero-section">
       <div class="container hero-grid">
-        <div
-          class="hero-content hero-content-home"
-        >
+        <div class="hero-content hero-content-home">
           <h1 class="hero-title hero-title-home">
-            Handwerker- und Garten<br /><span class="text-primary"
-              >Service</span
+            Handwerker- und Garten<br /><span class="text-primary">Service</span
             > in Müchen
           </h1>
 
@@ -27,7 +24,10 @@ import heroImage from "/public/images/hero.webp";
           </p>
 
           <div class="hero-actions">
-            <a href="https://wa.me/4917631433564" class="btn btn-primary btn-lg">
+            <a
+              href="https://wa.me/4917631433564"
+              class="btn btn-primary btn-lg"
+            >
               Jetzt Anrufen
             </a>
             <a href="#testimonials" class="btn btn-secondary btn-lg">
@@ -37,23 +37,23 @@ import heroImage from "/public/images/hero.webp";
         </div>
 
         <!-- <div class=""> -->
-          <!-- <div class="hero-image-wrapper"> -->
-            <!-- <Image
+        <!-- <div class="hero-image-wrapper"> -->
+        <!-- <Image
               src={heroImage}
               width={360}
               height={400}
               alt=""
               fetchpriority="high"
             /> -->
-            <img
-              class="hero-image"
-              fetchpriority="high"
-              src="/images/hero.webp"
-              width="360"
-              height="400"
-              alt="Tools"
-            />
-          <!-- </div> -->
+        <img
+          class="hero-image"
+          fetchpriority="high"
+          src="/images/hero.webp"
+          width="360"
+          height="400"
+          alt="Tools"
+        />
+        <!-- </div> -->
         <!-- </div> -->
       </div>
     </section>
@@ -83,12 +83,12 @@ import heroImage from "/public/images/hero.webp";
                 <div class="service-card-overlay"></div>
 
                 <div class="service-card-content">
-                  <div class="service-icon-box">
+                  <!-- <div class="service-icon-box">
                     <span
                       class="material-symbols-outlined"
                       style="font-size: 2rem;">construction</span
                     >
-                  </div>
+                  </div> -->
 
                   <div class="service-card-text">
                     <h4 class="service-title">Möbelmontage</h4>
@@ -116,12 +116,12 @@ import heroImage from "/public/images/hero.webp";
                 <div class="service-card-overlay"></div>
 
                 <div class="service-card-content">
-                  <div class="service-icon-box">
+                  <!-- <div class="service-icon-box">
                     <span
                       class="material-symbols-outlined"
                       style="font-size: 2rem;">construction</span
                     >
-                  </div>
+                  </div> -->
                   <div class="service-card-text">
                     <h4 class="service-title">Küchenmontage</h4>
                     <p class="text-muted" style="font-size: 0.875rem;">
@@ -148,12 +148,12 @@ import heroImage from "/public/images/hero.webp";
                 <div class="service-card-overlay"></div>
 
                 <div class="service-card-content">
-                  <div class="service-icon-box">
+                  <!-- <div class="service-icon-box">
                     <span
                       class="material-symbols-outlined"
                       style="font-size: 2rem;">construction</span
                     >
-                  </div>
+                  </div> -->
                   <div class="service-card-text">
                     <h4 class="service-title">Gartenpflege</h4>
                     <p class="text-muted" style="font-size: 0.875rem;">
@@ -180,12 +180,12 @@ import heroImage from "/public/images/hero.webp";
                 <div class="service-card-overlay"></div>
 
                 <div class="service-card-content">
-                  <div class="service-icon-box">
+                  <!-- <div class="service-icon-box">
                     <span
                       class="material-symbols-outlined"
                       style="font-size: 2rem;">construction</span
                     >
-                  </div>
+                  </div> -->
                   <div class="service-card-text">
                     <h4 class="service-title">Hausreparaturen</h4>
                     <p class="text-muted" style="font-size: 0.875rem;">
@@ -238,33 +238,104 @@ import heroImage from "/public/images/hero.webp";
             </p>
 
             <a href="/ueber-mich" class="link-arrow">
-              Mehr über mich <span class="material-symbols-outlined"
-                >trending_flat</span
-              >
+              Mehr über mich
+              <svg fill="#000000" width="32px" height="32px" viewBox="0 0 24 24" id="right-arrow" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><line id="primary" x1="3" y1="12" x2="21" y2="12" style="fill: none; stroke: #1b4353; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line><polyline id="primary-2" data-name="primary" points="18 15 21 12 18 9" style="fill: none; stroke: #1b4353; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline></g></svg>
             </a>
 
             <div class="checklist-grid">
               <div class="flex-center-v gap-2">
-                <span class="material-symbols-outlined text-primary"
+                <!-- <span class="material-symbols-outlined text-primary"
                   >check_circle</span
+                > -->
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                      stroke="#1b4353"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </g></svg
                 >
                 <span class="font-bold">Vollständig versichert</span>
               </div>
               <div class="flex-center-v gap-2">
-                <span class="material-symbols-outlined text-primary"
+                <!-- <span class="material-symbols-outlined text-primary"
                   >check_circle</span
+                > -->
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                      stroke="#1b4353"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </g></svg
                 >
                 <span class="font-bold">Transparente Preisgestaltung</span>
               </div>
               <div class="flex-center-v gap-2">
-                <span class="material-symbols-outlined text-primary"
+                <!-- <span class="material-symbols-outlined text-primary"
                   >check_circle</span
+                > -->
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                      stroke="#1b4353"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </g></svg
                 >
                 <span class="font-bold">Pünktlich und zuverlässig</span>
               </div>
               <div class="flex-center-v gap-2">
-                <span class="material-symbols-outlined text-primary"
+                <!-- <span class="material-symbols-outlined text-primary"
                   >check_circle</span
+                > -->
+                <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                      stroke="#1b4353"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+                  </g></svg
                 >
                 <span class="font-bold">Saubere Arbeitsweise</span>
               </div>
@@ -283,7 +354,10 @@ import heroImage from "/public/images/hero.webp";
             </div>
 
             <div class="hero-actions">
-              <a href="https://wa.me/4917631433564" class="btn btn-primary btn-lg">
+              <a
+                href="https://wa.me/4917631433564"
+                class="btn btn-primary btn-lg"
+              >
                 Jetzt Anrufen
               </a>
               <a href="/über-mich" class="btn btn-secondary btn-lg">
